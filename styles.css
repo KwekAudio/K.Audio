@@ -1,0 +1,97 @@
+/* General Body Styling */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 20;
+    background-color: #f9f9f9;
+    color: black; /* Set the default text color to black */
+  }
+  
+  /* Logo Styling */
+  #logo {
+    display: flex;
+    align-items: center; /* Center vertically*/
+    align-items: center; /* center vertically*/
+    margin-bottom: 20px;
+  }
+  
+  .logo-icon {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .logo-img {
+    width: 500px !important; /* Adjusted size of the image */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+  }
+  
+  .logo-text {
+    margin-left: -80px; /* Space between the image and the text */
+    font-size: 2.5em; /* Adjust font size to match the image size */
+    font-family: 'Curlz MT';
+    font-weight: bold; /* Make the text bold */
+    margin-top: -49px;
+  }
+  
+  /* Search Section Styling */
+  #search {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  #searchInput {
+    width: auto; /* Adjust width automatically based on padding */
+    height: 50px; /* match height with button */
+    font-size: 25px; /* Increase font size */
+    font-family: 'Gabriola';
+    padding: 15px 30px; /* Adjust padding */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid blue; /* Rounded corners  */
+    background-color: blue; /* Background color for input */
+    margin-right: 10px; /* Space between input and button */
+    margin-top: -100px; /* Space between input and button*/
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+    line-height: 1; /* Ensure consistent line-height */
+  }
+  
+  #searchButton {
+    padding: 15px 30px; /* Adjust padding */
+    font-size: 25px; /* Increase font size */
+    font-family: 'Gabriola';
+    height: 50px; /* match height with input */
+    width: auto; /* Adjust width automatically based on padding */
+    margin-top: -100px; /* Space between input and button*/
+    margin-bottom: 10px;
+    cursor: pointer; /* Ensure cursor is pointer for clickable button */
+    background-color: blue; /* Background color for button */
+    color: rgb(0, 0, 0); /* Text color */
+    border: none; /* none  */
+    border-radius: 10px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+    line-height: 1; /* Ensure consistent line-height */
+  }
+  
+  /* Button Hover Effect */
+  #searchButton:hover {
+    background-color: #03448a;
+  }
+  
+  /* Results Section Styling */
+  #results {
+    margin-top: 20px;
+  }
+  
+  .result-item {
+    margin-bottom: 10px;
+    color: black; /* Result items in black */
+  }
+  
+  .result-item a {
+    text-decoration: none;
+    color: black; /* Links in black */
+    font-weight: bold;
+  }
+  
+  .result-item a:hover {
+    text-decoration: underline;
+  }
