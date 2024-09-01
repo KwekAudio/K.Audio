@@ -7,7 +7,7 @@ async function getToken() {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
-      'Authorization': 'Basic ' + btoa(clientid + ':' + clientsecret)
+      'Authorization': 'Basic ' + btoa(clientId + ':' + clientSecret)
     },
     body: 'grant_type=client_credentials'
   });
