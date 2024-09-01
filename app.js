@@ -7,7 +7,7 @@ async function getToken() {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
-      'Authorization': 'Basic ' + btoa(clientId + ':' + clientSecret)
+      'Authorization': 'Basic ' + btoa(clientid + ':' + clientsecret)
     },
     body: 'grant_type=client_credentials'
   });
@@ -15,6 +15,7 @@ async function getToken() {
   const data = await result.json();
   token = data.access_token;
 }
+
 
 async function searchMusic() {
   const query = document.getElementById("searchInput").value.toLowerCase();
