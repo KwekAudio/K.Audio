@@ -3,8 +3,6 @@
     <name>K.Audio</name>
     <description>K.Audio: A music search and download app. Stream and download your favorite music effortlessly. Search a vast library,enjoy high-quality audio online, and save track for offline listening. .</description>
     <author email="erickkweka05@gmail.com" href="https://kwekaudio.com">Erick Kweka</author>
-        Erick Kweka
-    </author>
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
