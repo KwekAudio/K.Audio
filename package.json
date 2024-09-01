@@ -1,0 +1,26 @@
+{
+  "name": "k.audio",
+  "displayName": "K.Audio",
+  "version": "1.0.0",
+  "description": "A music search and download app.",
+  "main": "index.js",
+  "scripts": {
+    "build":"cordova build"
+  },
+  "keywords": [
+    "music", "app", "K.Audio", "music search", "download"
+  ],
+  "author": "Erick Kweka <erickkweka05@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "cordova-android": "^13.0.0",
+    "cordova-ios": "^7.1.1",
+    "windows": "^10.0.0"
+  },
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}
