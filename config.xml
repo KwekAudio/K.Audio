@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.kaudio" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.kwekaudio.kaudio" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>K.Audio</name>
-    <description>A music search and download app.</description>
-    <author email="erickkweka05@gmail.com" href="https://cordova.apache.org">
+    <description>K.Audio: A music search and download app. Stream and download your favorite music effortlessly. Search a vast library,enjoy high-quality audio online, and save track for offline listening. .</description>
+    <author email="erickkweka05@gmail.com" href="https://kwekaudio.com">Erick Kweka</author>
         Erick Kweka
     </author>
     <content src="index.html" />
