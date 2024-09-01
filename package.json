@@ -5,11 +5,10 @@
   "description": "A music search and download app.",
   "main": "index.js",
   "scripts": {
+    "test" "echo \"Error: no test specified\" && exit 1"
     "build":"cordova build"
   },
-  "keywords": [
-    "music", "app", "K.Audio", "music search", "download"
-  ],
+  "keywords": ["music", "app", "K.Audio", "music search", "download"],
   "author": "Erick Kweka <erickkweka05@gmail.com",
   "license": "MIT",
   "devDependencies": {
@@ -18,9 +17,6 @@
     "windows": "^10.0.0"
   },
   "cordova": {
-    "platforms": [
-      "android",
-      "ios"
-    ]
+    "platforms": ["android", "ios"]
   }
 }
