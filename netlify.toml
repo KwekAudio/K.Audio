@@ -1,9 +1,7 @@
 # netlify.toml
 
 [build]
-# Command to build the project (if applicable)
-command = "echo 'No build step'" 
+command = "npm run build" 
 publish = "www"
 [context.production.environment]
-
 NODE_ENV = "production"
