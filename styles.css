@@ -1,97 +1,146 @@
-/* General Body Styling */
+:root {
+  --blue: blue; /* Imebadilishwa kufuata rangi yako ya bluu */
+  --blue-hover: #03448a; /* Rangi ya hover kutoka kwenye kodi zako */
+  --green: #2ecc71;
+  --dark: black; /* Default text color kuwa nyeusi */
+  --gray: #f9f9f9; /* Background color kutoka kwenye kodi zako */
+}
+
+/* General Body Styling - Kulingana na kodi zako */
 body {
-    font-family: 'Times New Roman', serif;
-    margin: 20;
-    background-color: #f9f9f9;
-    color: black; /* Set the default text color to black */
-  }
-  
-  /* Logo Styling */
-  #logo {
-    display: flex;
-    align-items: center; /* Center vertically*/
-    align-items: center; /* center vertically*/
-    margin-bottom: 20px;
-  }
-  
-  .logo-icon {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .logo-img {
-    width: 500px !important; /* Adjusted size of the image */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure it doesn't overflow the container */
-  }
-  
-  .logo-text {
-    margin-left: -80px; /* Space between the image and the text */
-    font-size: 2.5em; /* Adjust font size to match the image size */
-    font-family: 'Curlz MT';
-    font-weight: bold; /* Make the text bold */
-    margin-top: -49px;
-  }
-  
-  /* Search Section Styling */
-  #search {
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-  
-  #searchInput {
-    width: auto; /* Adjust width automatically based on padding */
-    height: 50px; /* match height with button */
-    font-size: 25px; /* Increase font size */
-    font-family: 'Gabriola';
-    padding: 15px 30px; /* Adjust padding */
-    border-radius: 10px; /* Rounded corners */
-    border: 3px solid blue; /* Rounded corners  */
-    background-color: blue; /* Background color for input */
-    margin-right: 10px; /* Space between input and button */
-    margin-top: -100px; /* Space between input and button*/
-    box-sizing: border-box; /* Ensure padding is included in width/height */
-    line-height: 1; /* Ensure consistent line-height */
-  }
-  
-  #searchButton {
-    padding: 15px 30px; /* Adjust padding */
-    font-size: 25px; /* Increase font size */
-    font-family: 'Gabriola';
-    height: 50px; /* match height with input */
-    width: auto; /* Adjust width automatically based on padding */
-    margin-top: -100px; /* Space between input and button*/
-    margin-bottom: 10px;
-    cursor: pointer; /* Ensure cursor is pointer for clickable button */
-    background-color: blue; /* Background color for button */
-    color: rgb(0, 0, 0); /* Text color */
-    border: none; /* none  */
-    border-radius: 10px; /* Rounded corners */
-    box-sizing: border-box; /* Ensure padding is included in width/height */
-    line-height: 1; /* Ensure consistent line-height */
-  }
-  
-  /* Button Hover Effect */
-  #searchButton:hover {
-    background-color: #03448a;
-  }
-  
-  /* Results Section Styling */
-  #results {
-    margin-top: 20px;
-  }
-  
-  .result-item {
-    margin-bottom: 10px;
-    color: black; /* Result items in black */
-  }
-  
-  .result-item a {
-    text-decoration: none;
-    color: black; /* Links in black */
-    font-weight: bold;
-  }
-  
-  .result-item a:hover {
-    text-decoration: underline;
-  }
+  font-family: 'Times New Roman', serif;
+  margin: 20px; /* Imeongezewa px ili isomeke vizuri */
+  background-color: #f9f9f9;
+  color: black; 
+}
+
+.mk360-app {
+  max-width: 440px;
+  margin: 0 auto;
+  background: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border: 1px solid #ced6e0;
+}
+
+/* Header Styling */
+.mk-header {
+  background: var(--blue);
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mk-header h1 { 
+  margin: 0; 
+  font-size: 24px; 
+  font-weight: bold;
+}
+.mk-header p { 
+  margin: 0; 
+  font-size: 12px; 
+  opacity: 0.9; 
+}
+
+.stats { display: flex; gap: 8px; }
+.chip { background: rgba(255,255,255,0.2); padding: 6px 10px; border-radius: 10px; font-size: 12px; }
+.rank-chip { background: #e1b12c; color: black; font-weight: bold; }
+
+.mk-body { flex: 1; padding: 15px; padding-bottom: 75px; display: flex; flex-direction: column; }
+
+.tag { background: #eef2f7; color: var(--blue); padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; width: fit-content; }
+.title { margin: 8px 0 15px 0; font-size: 20px; color: var(--dark); font-weight: bold; }
+
+.info-card { background: var(--gray); border-left: 4px solid var(--blue); padding: 12px; border-radius: 10px; margin-bottom: 15px; }
+.info-card h3 { margin: 0 0 5px 0; font-size: 15px; color: black; }
+.info-card p { margin: 0; font-size: 14px; line-height: 1.4; color: black; }
+
+.quiz-card { background: white; border-radius: 8px; }
+.question { font-weight: bold; font-size: 16px; margin-bottom: 15px; color: black; }
+
+/* Options & Buttons Styling yenye ladha ya kodi zako */
+.options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; }
+.opt-btn { 
+  padding: 12px; 
+  border: 2px solid #ced6e0; 
+  border-radius: 10px; /* Mduara kulingana na kodi zako */
+  background: white; 
+  text-align: left; 
+  cursor: pointer; 
+  transition: 0.2s; 
+  font-size: 15px;
+  color: black;
+  font-family: 'Times New Roman', serif;
+}
+.opt-btn.selected { 
+  border-color: var(--blue); 
+  background: #eef2f7; 
+  font-weight: bold; 
+}
+
+/* Submit Button yenye Gabriola feel au Times New Roman */
+.submit-btn { 
+  width: 100%; 
+  padding: 14px; 
+  background: var(--blue); /* Imetumia bluu sasa */
+  color: white; 
+  border: none; 
+  border-radius: 10px; 
+  font-size: 18px; 
+  font-weight: bold; 
+  cursor: pointer; 
+}
+.submit-btn:hover {
+  background-color: var(--blue-hover); /* Hover effect uliyoiweka */
+}
+.submit-btn:disabled { background: #cbd5e1; cursor: not-allowed; }
+
+/* Chat Section - Imebadilishwa kutumia Font ya 'Gabriola' kwenye Input na Button kulingana na kodi zako */
+.chat-container { display: flex; flex-direction: column; height: 380px; }
+.chat-box { flex: 1; overflow-y: auto; border: 1px solid #ced6e0; padding: 10px; border-radius: 10px; background: var(--gray); display: flex; flex-direction: column; }
+.bubble { padding: 10px; border-radius: 10px; margin: 5px 0; max-width: 80%; font-size: 14px; line-height: 1.4; word-wrap: break-word; color: black; }
+.bubble.bot { background: white; border-left: 3px solid var(--blue); align-self: flex-start; }
+.bubble.user { background: #d1ecf1; align-self: flex-end; text-align: right; }
+
+.input-area { display: flex; gap: 5px; margin-top: 8px; }
+#chat-input { 
+  flex: 1; 
+  padding: 10px; 
+  border: 3px solid var(--blue); 
+  border-radius: 10px; 
+  font-family: 'Gabriola', sans-serif; /* Font kutoka kwenye Search Input yako */
+  font-size: 20px; 
+  box-sizing: border-box;
+}
+.input-area button { 
+  padding: 0 20px; 
+  background: var(--blue); 
+  color: white; 
+  border: none; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  font-family: 'Gabriola', sans-serif; /* Font kutoka kwenye Search Button yako */
+  font-size: 20px;
+  box-sizing: border-box;
+}
+.input-area button:hover {
+  background-color: var(--blue-hover);
+}
+
+/* Leaderboard / Results Styling */
+.list { display: flex; flex-direction: column; gap: 8px; margin-top: 15px; }
+.row { display: flex; justify-content: space-between; padding: 12px; background: #eef2f7; border-radius: 10px; font-size: 15px; color: black; }
+.row.top { border-left: 4px solid #e1b12c; font-weight: bold; }
+.row.current { background: #dff9fb; font-weight: bold; border: 2px dashed var(--blue); }
+
+/* Navigation ya Chini */
+.mk-nav { position: absolute; bottom: 0; left: 0; right: 0; height: 55px; background: white; display: flex; border-top: 1px solid #ced6e0; }
+.mk-nav button { flex: 1; border: none; background: none; font-size: 14px; cursor: pointer; color: #7f8c8d; font-family: 'Times New Roman', serif; }
+.mk-nav button.active { color: var(--blue); font-weight: bold; text-decoration: underline; }
+
+.fade-in { animation: fadeIn 0.3s ease-in; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
